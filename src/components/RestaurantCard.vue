@@ -1,4 +1,3 @@
-
 <template>
     <div class="restaurant--card">
       <div :style="changeBackground" class="restaurant--image">
@@ -46,8 +45,11 @@
   .restaurant--card {
     width: 40%;
     height: 30vh;
+    padding-right: 20px;
     p{
         margin: 0px;
+        float: left;
+        padding-top: 20px;
     }
     .restaurant--image {
         background-image: url("https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kMXJhbHNvZ25qbmczNy5jbG91ZGZyb250Lm5ldC8zNzg4MDJiMC1jNTI4LTQ4MjktYjBiNS0wY2M2NDBkZjYzY2QuanBlZw==") ;
@@ -60,10 +62,12 @@
      .retaurant--informations{
 
         .top{
-            margin: 10px 0px;
+            margin: 40px;
             display:flex;
             align-items: center;
             justify-content:space-between;
+            padding: 50px;
+            background-color: aquamarine;
             .note{
                 background-color: #eeeeee;
                 display: flex;
