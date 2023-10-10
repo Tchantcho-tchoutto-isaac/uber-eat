@@ -6,12 +6,15 @@
             <input v-model="user_search_restaurant" type="text" placeholder="Que Rechercher Vous ? "> 
 
             <div class="seach">
-                <div  v-for="(restaurant,i) in seach_restaurant" :key="i" class="container--restaurant--seach">
+                <router-link to="/restaurant-Component">
+                    <div  v-for="(restaurant,i) in seach_restaurant" :key="i" class="container--restaurant--seach">
                     <div class="wrapper--img">
                         <img :src="restaurant.image" alt="" srcset="">
                     </div>
                     <h2>{{ restaurant.name }}</h2>
                 </div>
+                </router-link>
+                
             </div>
          </div>
         
